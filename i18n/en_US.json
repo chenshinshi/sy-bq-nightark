@@ -1,9 +1,9 @@
 {
 	"button": {
-        "ysys": "colorBQ",
-        "ysyss": "successBQ",
-        "ysysw": "warningBQ",
-        "ysyse": "errorBQ",
-        "ysysi": "infoBQ"
+        "ysys": "Styled blockquote",
+        "ysyss": "Success blockquote",
+        "ysysw": "Warning blockquote",
+        "ysyse": "Error blockquote",
+        "ysysi": "Info blockquote"
     }
 }
