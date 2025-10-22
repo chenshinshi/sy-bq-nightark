@@ -26,7 +26,7 @@
             // 为 bq1 到 bq13 生成对应的 slash 命令
             for (let i = 1; i <= 13; i++) {
                 this.protyleSlash.push({
-                    filter: [`bq${i}`, `引述${i}`, `ysys${i}`],
+                    filter: [`bq${i}`, `引述${i}`, `blockquote${i}`, `ys${i}`],
                     html: `<div class="b3-list-item__first"><span class="b3-list-item__text">${i18n.button.ysys}${i}</span><span class="b3-list-item__meta">🎨</span></div>`,
                     id: `insertStyleBlock${i}`,
                     callback: (p) => {
@@ -42,25 +42,25 @@
             // 添加特殊功能的 slash 命令
             const specialCommands = [
                 {
-                    filter: ["bqi", "信息块", "ysysi"],
+                    filter: ["bqi", "信息块", "xinxikuai", "ysi"],
                     html: `<div class="b3-list-item__first"><span class="b3-list-item__text">${i18n.button.ysysi}</span><span class="b3-list-item__meta">ℹ️</span></div>`,
                     id: "insertInfoBlock",
                     style: "background-color: var(--b3-card-info-background); color: var(--b3-card-info-color); --b3-parent-background: var(--b3-card-info-background);"
                 },
                 {
-                    filter: ["bqw", "警告块", "ysysw"],
+                    filter: ["bqw", "警告块", "jinggaokuai", "ysw"],
                     html: `<div class="b3-list-item__first"><span class="b3-list-item__text">${i18n.button.ysysw}</span><span class="b3-list-item__meta">⚠️</span></div>`,
                     id: "insertWarningBlock",
                     style: "background-color: var(--b3-card-warning-background); color: var(--b3-card-warning-color); --b3-parent-background: var(--b3-card-warning-background);"
                 },
                 {
-                    filter: ["bqe", "错误块", "ysyse"],
+                    filter: ["bqe", "错误块", "cuowukuai", "yse"],
                     html: `<div class="b3-list-item__first"><span class="b3-list-item__text">${i18n.button.ysyse}</span><span class="b3-list-item__meta">❌</span></div>`,
                     id: "insertErrorBlock",
                     style: "background-color: var(--b3-card-error-background); color: var(--b3-card-error-color); --b3-parent-background: var(--b3-card-error-background);"
                 },
                 {
-                    filter: ["bqs", "成功块", "ysyss"],
+                    filter: ["bqs", "成功块", "chenggongkuai", "yss"],
                     html: `<div class="b3-list-item__first"><span class="b3-list-item__text">${i18n.button.ysyss}</span><span class="b3-list-item__meta">✅</span></div>`,
                     id: "insertSuccessBlock",
                     style: "background-color: var(--b3-card-success-background); color: var(--b3-card-success-color); --b3-parent-background: var(--b3-card-success-background);"
