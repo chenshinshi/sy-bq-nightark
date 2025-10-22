@@ -23,7 +23,7 @@
                     callback: (p) => {
                         const k = window.Lute.NewNodeID();
                         const T = window.Lute.NewNodeID();
-                        const D = `style="background-color: var(--b3-font-background${i});"`;
+                        const D = `style="background-color: var(--b3-font-background${i}); --b3-parent-background: var(--b3-font-background${i});"`;
                         
                         p.insert(`<div data-node-id="${k}" data-type="NodeBlockquote" class="bq" updated="${k.split("-")[0]}" ${D}><div data-node-id="${T}" updated="${T.split("-")[0]}" data-type="NodeParagraph" class="p"><div contenteditable="true" spellcheck="false"></div><div class="protyle-attr" contenteditable="false">​</div></div><div class="protyle-attr" contenteditable="false">​</div></div>`, true);
                     }
