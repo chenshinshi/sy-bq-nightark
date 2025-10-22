@@ -1,3 +1,9 @@
 {
-
+	"button": {
+        "ysys": "colorBQ",
+        "ysyss": "successBQ",
+        "ysysw": "warningBQ",
+        "ysyse": "errorBQ",
+        "ysysi": "infoBQ"
+    }
 }
