@@ -1,0 +1,28 @@
+{
+  "name": "sy-bq-nightark",
+  "author": "chenshinshi",
+  "url": "https://github.com/chenshinshi/sy-bq-nightark/",
+  "version": "1.0.1",
+  "minAppVersion": "3.0.0",
+  "backends": ["all"],
+  "frontends": ["all"],
+  "displayName": {
+    "zh_CN": "多色引述块",
+    "default": "Colorful BQ"
+  },
+  "disabledInPublish": true,
+  "description": {
+    "default": "Insert different color blockquote for nightArk",
+    "zh_CN": "适配nightark主题，插入多色引述块"
+  },
+  "readme": {
+    "zh_CN": "README.md",
+    "default": "README_en_US.md"
+  },
+  "funding": {
+    "custom": [
+      ""
+    ]
+  },
+  "keywords": []
+}
