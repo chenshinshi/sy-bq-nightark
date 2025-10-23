@@ -27,7 +27,7 @@
             for (let i = 1; i <= 13; i++) {
                 this.protyleSlash.push({
                     filter: [`bq${i}`, `引述${i}`, `blockquote${i}`, `ys${i}`],
-                    html: `<div class="b3-list-item__first"><span class="b3-list-item__text">${i18n.button.ysys}${i}</span><span class="b3-list-item__meta">bq${i} 🎨</span></div>`,
+                    html: `<div class="b3-list-item__first"><span class="color__square color__square--list" style="background-color: var(--b3-font-background${i})"> </span><span class="b3-list-item__text">${i18n.button.ysys}${i}</span><span class="b3-list-item__meta">bq${i} 🎨</span></div>`,
                     id: `insertStyleBlock${i}`,
                     callback: (p) => {
                         const k = window.Lute.NewNodeID();
@@ -43,25 +43,25 @@
             const specialCommands = [
                 {
                     filter: ["bqi", "信息块", "xinxikuai", "ysi"],
-                    html: `<div class="b3-list-item__first"><span class="b3-list-item__text">${i18n.button.ysysi}</span><span class="b3-list-item__meta">bqi ℹ</span></div>`,
+                    html: `<div class="b3-list-item__first"><span class="color__square color__square--list" style="color: var(--b3-card-info-color);background-color: var(--b3-card-info-background);"> </span><span class="b3-list-item__text">${i18n.button.ysysi}</span><span class="b3-list-item__meta">bqi ℹ</span></div>`,
                     id: "insertInfoBlock",
                     style: "background-color: var(--b3-card-info-background); color: var(--b3-card-info-color); --b3-parent-background: var(--b3-card-info-background);"
                 },
                 {
                     filter: ["bqw", "警告块", "jinggaokuai", "ysw"],
-                    html: `<div class="b3-list-item__first"><span class="b3-list-item__text">${i18n.button.ysysw}</span><span class="b3-list-item__meta">bqw ⚠</span></div>`,
+                    html: `<div class="b3-list-item__first"><span class="color__square color__square--list" style="color: var(--b3-card-warning-color);background-color: var(--b3-card-warning-background);"> </span><span class="b3-list-item__text">${i18n.button.ysysw}</span><span class="b3-list-item__meta">bqw ⚠️</span></div>`,
                     id: "insertWarningBlock",
                     style: "background-color: var(--b3-card-warning-background); color: var(--b3-card-warning-color); --b3-parent-background: var(--b3-card-warning-background);"
                 },
                 {
                     filter: ["bqe", "错误块", "cuowukuai", "yse"],
-                    html: `<div class="b3-list-item__first"><span class="b3-list-item__text">${i18n.button.ysyse}</span><span class="b3-list-item__meta">bqe ❌</span></div>`,
+                    html: `<div class="b3-list-item__first"><span class="color__square color__square--list" style="color: var(--b3-card-error-color);background-color: var(--b3-card-error-background);"> </span><span class="b3-list-item__text">${i18n.button.ysyse}</span><span class="b3-list-item__meta">bqe ❌</span></div>`,
                     id: "insertErrorBlock",
                     style: "background-color: var(--b3-card-error-background); color: var(--b3-card-error-color); --b3-parent-background: var(--b3-card-error-background);"
                 },
                 {
                     filter: ["bqs", "成功块", "chenggongkuai", "yss"],
-                    html: `<div class="b3-list-item__first"><span class="b3-list-item__text">${i18n.button.ysyss}</span><span class="b3-list-item__meta">bqs ✅</span></div>`,
+                    html: `<div class="b3-list-item__first"><span class="color__square color__square--list" style="color: var(--b3-card-success-color);background-color: var(--b3-card-success-background);"> </span><span class="b3-list-item__text">${i18n.button.ysyss}</span><span class="b3-list-item__meta">bqs ✅</span></div>`,
                     id: "insertSuccessBlock",
                     style: "background-color: var(--b3-card-success-background); color: var(--b3-card-success-color); --b3-parent-background: var(--b3-card-success-background);"
                 }
