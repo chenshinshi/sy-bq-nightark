@@ -2,13 +2,13 @@
   "name": "sy-bq-nightark",
   "author": "chenshinshi",
   "url": "https://github.com/chenshinshi/sy-bq-nightark/",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "minAppVersion": "3.0.0",
   "backends": ["all"],
   "frontends": ["all"],
   "displayName": {
     "zh_CN": "多色引述块",
-    "default": "Colorful BQ"
+    "default": "Colorful Blockquote"
   },
   "disabledInPublish": true,
   "description": {
